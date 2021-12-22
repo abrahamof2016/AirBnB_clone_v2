@@ -5,15 +5,7 @@
   <img src="https://github.com/lowercaselife/AirBnB_clone_v2/blob/master/assets/hbnb_logo.png"
 	    alt="HolbertonBnB logo">
 </p>
-
-
-[![lisence](https://img.shields.io/github/license/adonis7ejeda/AirBnB_clone_v2?style=plastic)](https://github.com/adonis7ejeda/AirBnB_clone_v2/blob/master/LICENSE)
-[![Twitter Adonis](https://img.shields.io/twitter/follow/Adonis7ejeda?label=AdonisTejeda&style=social)](https://twitter.com/Adonis7ejeda)
-[![Twitter Carlos](https://img.shields.io/twitter/follow/cbarros27?label=CarlosBarros&style=social)](https://twitter.com/cbarros27)
-
                        
-
-
 
 
 ## Description :house:
@@ -82,5 +74,4 @@ $ python3 unittest -m tests/test_console.py
 ```
 
 ## Authors :black_nib:
-* **Adonis Tejeda** <[adonis7ejeda](https://github.com/adonis7ejeda)>
-* **Carlos Barros** <[cbarros7](https://github.com/cbarros7)>
+* **Danson Kalaghe** <[lowercaselife](https://github.com/lowercaselife)>
