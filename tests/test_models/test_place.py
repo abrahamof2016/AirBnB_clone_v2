@@ -5,31 +5,31 @@ from models.place import Place
 
 
 class test_Place(test_basemodel):
-    """ Place """
+    """Place"""
 
     def __init__(self, *args, **kwargs):
-        """ Place """
+        """ """
         super().__init__(*args, **kwargs)
         self.name = "Place"
         self.value = Place
 
     def test_city_id(self):
-        """ Place """
+        """Place"""
         new = self.value()
         self.assertEqual((new.city_id), None)
 
     def test_user_id(self):
-        """ Place """
+        """Place"""
         new = self.value()
         self.assertEqual((new.user_id), None)
 
     def test_name(self):
-        """ Place """
+        """Place"""
         new = self.value()
         self.assertEqual((new.name), None)
 
     def test_description(self):
-        """ Place """
+        """Place"""
         new = self.value()
         self.assertEqual((new.description), None)
 

@@ -8,13 +8,13 @@ class test_City(test_basemodel):
     """City"""
 
     def __init__(self, *args, **kwargs):
-        """City """
+        """City"""
         super().__init__(*args, **kwargs)
         self.name = "City"
         self.value = City
 
     def test_state_id(self):
-        """State_id """
+        """State_id"""
         new = self.value()
         self.assertEqual((new.state_id), None)
 
