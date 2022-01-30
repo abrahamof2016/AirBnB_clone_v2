@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Script that starts a Flask web application
-2- C is fun!
+3- Python is cool
 """
 from flask import Flask
 app = Flask(__name__)
@@ -30,6 +30,23 @@ def c_is_fun(text):
     Return desired string for /c/<text> route, replace _ with space
     """
     return "C {}".format(text.replace("_", " "))
+
+
+@app.route('/python/<text>')
+def python_is_magic(text):
+    """
+    Return desired string for /python/<text> route, replace _ with space
+    """
+    return "Python {}".format(text.replace("_", " "))
+
+
+@app.route('/python/')
+def python_is_cool():
+    """
+    Return default string for /python/ route
+    """
+    text = "is cool"
+    return "Python {}".format(text)
 
 
 if __name__ == '__main__':
