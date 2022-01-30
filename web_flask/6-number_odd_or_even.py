@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Script that starts a Flask web application
-5- Number template
+6- Odd or even?
 """
 from flask import Flask, render_template
 app = Flask(__name__)
@@ -63,6 +63,14 @@ def number_template(n):
     Displays an html page only if number is int
     """
     return render_template('5-number.html', number=n)
+
+
+@app.route('/number_odd_or_even/<int:n>')
+def number_template_odd_or_even(n):
+    """
+    Displays an html page only if number is int odd or even
+    """
+    return render_template('6-number_odd_or_even.html', number=n)
 
 
 if __name__ == '__main__':
