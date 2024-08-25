@@ -19,11 +19,3 @@ def do_pack():
     # Create the archive using tar (executed locally)
     check = local(f"tar -czvf versions/{archive_name} /home/vagrant/AirBnB_clone/web_static")
 
-    if check.failed:
-        return None
-    else:
-        return f"versions/{archive_name}"
-    
-    if __name__ == "__main__":
-        do_pack()
-
