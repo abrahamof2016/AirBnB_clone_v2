@@ -18,4 +18,8 @@ def do_pack():
 
     # Create the archive using tar (executed locally)
     check = local(f"tar -czvf versions/{archive_name} /home/vagrant/AirBnB_clone/web_static")
+    if check.failed:
+        return None
+    else:
+        return archive_name
 
