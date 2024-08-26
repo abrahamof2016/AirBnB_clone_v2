@@ -22,13 +22,13 @@ def do_deploy(archive_path):
 
     try:
         put(archive_path, '/tmp')
-        local('mkdir -p {}'.format(dest))
-        local('tar -xzf /tmp/{}.tgz -C {}'.format(name, dest))
-        local('rm -f /tmp/{}.tgz'.format(name))
-        local('mv {}/web_static/* {}/'.format(dest, dest))
-        local('rm -rf {}/web_static'.format(dest))
-        local('rm -rf /data/web_static/current')
-        local('ln -s {} /data/web_static/current'.format(dest))
+        run('mkdir -p {}'.format(dest))
+        run('tar -xzf /tmp/{}.tgz -C {}'.format(name, dest))
+        run('rm -f /tmp/{}.tgz'.format(name))
+        run('mv {}/web_static/* {}/'.format(dest, dest))
+        run('rm -rf {}/web_static'.format(dest))
+        run('rm -rf /data/web_static/current')
+        run('ln -s {} /data/web_static/current'.format(dest))
         return True
     except:
         return False
