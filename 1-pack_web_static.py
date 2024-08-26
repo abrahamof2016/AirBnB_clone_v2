@@ -4,11 +4,11 @@
 from fabric.api import *
 from datetime import datetime
 
+
 def do_pack():
     """
     generate a .tgz archive of the web_static directory with a timestamp.
     """
-
 
     # Create the versions directory if it doesn't exist.
     local("mkdir -p versions")
