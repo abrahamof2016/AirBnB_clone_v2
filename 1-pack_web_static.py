@@ -9,6 +9,7 @@ def do_pack():
     generate a .tgz archive of the web_static directory with a timestamp.
     """
 
+
     # Create the versions directory if it doesn't exist.
     local("mkdir -p versions")
 
@@ -17,9 +18,8 @@ def do_pack():
     archive_name = f"web_static_{now}.tgz"
 
     # Create the archive using tar (executed locally)
-    check = local(f"tar -czvf versions/{archive_name} /home/vagrant/AirBnB_clone/web_static")
+    check = local(f"tar -czvf versions/{archive_name} web_static")
     if check.failed:
         return None
     else:
         return archive_name
-
