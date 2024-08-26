@@ -1,14 +1,17 @@
 #!/usr/bin/python3
-"""Distributes an archive to your web servers, using the function do_deploy"""
+# A fabric script to distribute an archive to web servers.
+
+from fabric.api import *
 from fabric.contrib import files
-from fabric.api import env, put, run
 import os
 
-env.hosts = ['34.74.122.123', '3.231.229.36']
+env.hosts = ['100.26.214.241', '54.237.43.234']
 
 
 def do_deploy(archive_path):
-    """Function for deploy"""
+    """
+    distribute a .tgz archive of the web_static directory to a web server.
+    """
     if not os.path.exists(archive_path):
         return False
 
